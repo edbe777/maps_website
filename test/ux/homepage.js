@@ -1,21 +1,21 @@
 import { Selector } from 'testcafe';
 
 fixture("Home page UX")
-    .page("http://127.0.0.1:8080/hugo-split-gallery/");
+    .page("https://edbe777.github.io/maps_website/");
 
 test("Clicking on a track marker should display its popup", async t => {
     await t
         .expect(Selector("#mapid .leaflet-popup-pane").hasChildElements).notOk()
-        .hover(Selector("#mapid .leaflet-marker-pane .awesome-marker.awesome-marker-icon-purple")) // Select "Grand Veymont"
-        .click(Selector("#mapid .leaflet-marker-pane .awesome-marker.awesome-marker-icon-cadetblue")) // Select "Grand Veymont"
+        .hover(Selector("#mapid .leaflet-marker-pane .awesome-marker.awesome-marker-icon-purple")) // Select "01"
+        .click(Selector("#mapid .leaflet-marker-pane .awesome-marker.awesome-marker-icon-cadetblue")) // Select "01"
         .expect(Selector("#mapid .leaflet-popup-pane").hasChildElements).ok()
-        .expect(Selector("#mapid .leaflet-popup-pane .leaflet-popup-content").innerText).eql("Grand Veymont");
+        .expect(Selector("#mapid .leaflet-popup-pane .leaflet-popup-content").innerText).eql("01");
 });
 test("Clicking on a photo marker should display its popup", async t => {
     await t
         .click(Selector("#mapid .leaflet-marker-pane .awesome-marker.awesome-marker-icon-gray").nth(0))
         .expect(Selector("#mapid .leaflet-popup-pane").hasChildElements).ok()
-        .expect(Selector("#mapid .leaflet-popup-pane .leaflet-popup-content").innerText).eql("La Grave");
+        .expect(Selector("#mapid .leaflet-popup-pane .leaflet-popup-content").innerText).eql("03");
 });
 test.skip("Hovering on a track should bring it up", async t => {
     // TODO: find a way to make that test work

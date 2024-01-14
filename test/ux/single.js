@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture("Single UX")
-    .page("http://127.0.0.1:8080/hugo-split-gallery/posts/01/index.html");
+    .page("https://edbe777.github.io/maps_website/posts/01/index.html");
 
 test("Clicking on a track marker should display its popup", async t => {
     await t
