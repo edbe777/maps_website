@@ -1,14 +1,14 @@
 {
- "author": "Thomas Muguet",
+ "author": "Ed",
  "bugs": {
-  "url": "https://gitlab.com/tmuguet/hugo-split-gallery"
+  "url": "https://edbe777.github.io/maps_website/"
  },
  "comments": {
   "dependencies": {},
   "devDependencies": {}
  },
  "description": "Hugo Split Gallery theme",
- "homepage": "https://gitlab.com/tmuguet/hugo-split-gallery",
+ "homepage": "https://edbe777.github.io/maps_website/",
  "keywords": [
   "hugo",
   "gohugo"
@@ -17,7 +17,7 @@
  "name": "hugo-split-gallery",
  "repository": {
   "type": "git",
-  "url": "git+https://gitlab.com/tmuguet/hugo-split-gallery.git"
+  "url": "https://edbe777.github.io/maps_website/"
  },
  "version": "1.6.0",
  "scripts": {

@@ -2,11 +2,10 @@ name = "Hugo Split Gallery"
 license = "GPL-3.0-or-later"
 licenselink = "https://gitlab.com/tmuguet/hugo-split-gallery/-/blob/main/LICENSE"
 description = "Photo gallery inspired by Hugo Split Theme"
-homepage = "https://gitlab.com/tmuguet/hugo-split-gallery"
-demosite = "https://tmuguet.gitlab.io/hugo-split-gallery/"
+homepage = "https://edbe777.github.io/maps_website/"
 tags = ["blog", "gallery", "responsive"]
 features = ["posts"]
 
 [author]
-  name = "Thomas Muguet"
-  homepage = "https://tmuguet.me/"
+  name = "Ed"
+  homepage = "https://edbe777.github.io/maps_website/"

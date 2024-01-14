@@ -1,4 +1,4 @@
-# Hugo Split Gallery 
+# Hugo Split Gallery
 
 Split Gallery is a theme for [Hugo](http://gohugo.io/) focused on photos and maps.  
 This Hugo theme features a photo gallery, a map and custom content per page, and supports custom sections and taxonomies.
@@ -9,7 +9,7 @@ It is inspired by [Hugo Split Theme](https://github.com/christianmendoza/hugo-sp
 
 For more information, read the official [setup guide](https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme) of Hugo.
 
-### Structure
+## Structure
 
 *This theme supports any type of section (`post`, `blog`, ...). For simplicity, we'll use the term `post` in this part.*
 
@@ -61,13 +61,12 @@ This theme includes [fancybox](https://fancyapps.com/fancybox/3/), which is not 
 
 All other third-parties included are free to use (under MIT License, SIL OFL 1.1, BSD-2-Clause).
 
-
 If you wish to add a new translation, there are two files to create:
 
 * `i18n/<language>.toml`, containing main theme translations
 * `assets/hugo-split-gallery/fancybox.<language>.js`, containing fancybox translations
 
-### Adding new third-parties / updating third-parties
+## Adding new third-parties / updating third-parties
 
 Adding/updating a third-party requires npm to be used. Resources (JS, CSS, images, fonts, etc.) are copied and commited into git, so using this theme does not require npm.
 
