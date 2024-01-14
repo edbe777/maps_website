@@ -1,4 +1,4 @@
-# Hugo Split Gallery | [Demo](https://tmuguet.gitlab.io/hugo-split-gallery/)
+# Hugo Split Gallery 
 
 Split Gallery is a theme for [Hugo](http://gohugo.io/) focused on photos and maps.  
 This Hugo theme features a photo gallery, a map and custom content per page, and supports custom sections and taxonomies.
@@ -7,34 +7,9 @@ This project is licensed under the [GPLv3 license](/LICENSE). Due to 3rd-party i
 
 It is inspired by [Hugo Split Theme](https://github.com/christianmendoza/hugo-split-theme), itself ported from [Split](https://onepagelove.com/split) by [One Page Love](https://onepagelove.com).
 
-![screenshot](https://gitlab.com/tmuguet/hugo-split-gallery/-/raw/main/images/tn.png)
-
-[Demo](https://tmuguet.gitlab.io/hugo-split-gallery/) (built with [exampleSite](https://gitlab.com/tmuguet/hugo-split-gallery/-/tree/main/exampleSite) as source); [Live example](https://thomasmuguet.info/).
-
-This project follows [semantic versioning](https://semver.org/), meaning any new minor version (e.g. 1.1.0 -> 1.2.0) only introduces new features without breaking changes, and breaking changes are only introduced in major versions (e.g. 1.1.0 -> 2.0.0).
-This means you can safely upgrade from one minor version to the next one.
-
-## Installation
-
-Inside the folder of your Hugo site, run the following command:
-
-```bash
-git submodule add https://gitlab.com/tmuguet/hugo-split-gallery.git themes/hugo-split-gallery
-```
-
-Then, change (or add) the theme in the site's configuration (e.g. `config.toml`):
-
-```toml
-theme = "hugo-split-gallery"
-```
-
 For more information, read the official [setup guide](https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme) of Hugo.
 
-## Getting started
-
-After installing the theme successfully, you just need to add some content.
-
-### Content archetype
+### Structure
 
 *This theme supports any type of section (`post`, `blog`, ...). For simplicity, we'll use the term `post` in this part.*
 
@@ -43,22 +18,22 @@ This theme requires each post to follow this structure:
 ```text
 content/
 ├── posts
-│   ├── my-post
+│   ├── post1
 │   │   ├── index.md
-│   │   ├── mytrack.gpx
+│   │   ├── track_a1.gpx
 │   │   └── images
-│   │       ├── IMGP.jpg
+│   │       ├── IMG_a1.jpg
 │   │       └── ..
-│   ├── my-other-post
+│   ├── post2
 │   │   ├── index.md
-│   │   ├── mytrack.gpx
-│   │   ├── mysecondtrack.gpx
+│   │   ├── track_a2.gpx
+│   │   ├── track_b2.gpx
 │   │   └── images
-│   │       ├── IMGP.jpg
+│   │       ├── IMG_a2.jpg
 │   │       └── ..
 ```
 
-In other words, photos displayed in the gallery **must** be in a `images` subfolder, and track(s) -if any- must be at the same level as the content. Supported formats for tracks are GPX (`.gpx` files), KML (`.kml` files) and GeoJSON (`.geojson` files).
+Photos displayed in the gallery **must** be in a `images` subfolder, and track(s) -if any- must be at the same level as the content. Supported formats for tracks are GPX (`.gpx` files), KML (`.kml` files) and GeoJSON (`.geojson` files).
 
 Additionnally, the content of the post:
 
@@ -69,34 +44,14 @@ Example:
 
 ```text
 ---
-title: "Lac de la Muzelle et lac Lauvitel"
-date: 2017-07-30T00:00:00+00:00
-images: ["images/IMGP3719.jpg"]
-seealso: ["posts/lac-lauvitel", "posts/lac-muzelle"]    # If single, can avoid the brackets
+title: "test1"
+date: 2011-04-30T00:00:00+00:00
+images: ["images/IMG_a1.jpg"]
+seealso: ["posts/post1", "posts/post2"] 
 ---
 
-Cat ipsum dolor sit amet, hide from vacuum cleaner swat turds around the house hate dog don't nosh on the birds.
+Some text can be written here.
 ```
-
-## Tweaking your site
-
-In order to work, this theme does not require anything specific from the configuration of your site.
-
-This theme supports all configuration options specified in [Hugo documentation](https://gohugo.io/getting-started/configuration/). If you have issues with an option, please let me know via the [issue tracker](https://gitlab.com/tmuguet/hugo-split-gallery/-/issues) or by [email](mailto:hi@tmuguet.me).
-
-Some additionnal parameters are available to tweak your site, described in [the documentation](docs/index.md).
-
-## Updating
-
-From the folder of your Hugo website, run the following commands to update to the latest version:
-
-```bash
-cd themes/hugo-split-gallery && git pull
-```
-
-## Reference
-
-For reference on site parameters, post parameters and warnings, see [the documentation](docs/reference.md).
 
 ## License
 
@@ -106,18 +61,6 @@ This theme includes [fancybox](https://fancyapps.com/fancybox/3/), which is not 
 
 All other third-parties included are free to use (under MIT License, SIL OFL 1.1, BSD-2-Clause).
 
-## Contributors
-
-* @tmuguet: Maintainer
-* @beva-sdev: Czech and German translations, numerous bug reporting
-
-## Contributing
-
-If you find a bug or have an idea for a feature, feel free to use the [issue tracker](https://gitlab.com/tmuguet/hugo-split-gallery/-/issues) to let me know.
-
-In case you want to merge some code, you are more than welcome to open merge requests (with or without a related issue). Please branch from the `next` version of this repo and target the `next` branch for the merge request, as `main` is reserved for tagged versions. Please also note this theme follows semantic versioning, thus don't introduce breaking changes if they are not necessary.
-
-### Adding translation
 
 If you wish to add a new translation, there are two files to create:
 

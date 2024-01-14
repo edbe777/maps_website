@@ -1,8 +1,8 @@
 ---
-title: "La Grave"
-date: 2018-02-25T00:00:00+00:00
-images: ["images/IMGP4283.jpg"]
-locations: "Oisans"
+title: "C"
+date: 2008-02-25T00:00:00+00:00
+images: ["images/statue.png"]
+locations: "statue"
 ---
 
-Freeriding at La Grave
+Statue of David.

@@ -1,3 +1,3 @@
 ---
-title: "My hikes"
+title: "My picture archive"
 ---
